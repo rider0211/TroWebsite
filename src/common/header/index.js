@@ -1,8 +1,61 @@
-import React from "react";
+import * as React from 'react';
+import { AppBar, Box, Link, Container, styled, Button, Badge  } from '@mui/material';
+import { useNavigate } from 'react-router-dom';
+import { Stack } from '@mui/material';
+import { blue, grey } from '@mui/material/colors';
+import ShoppingCartCheckoutIcon from '@mui/icons-material/ShoppingCartCheckout';
+import { fontSize } from '@mui/system';
 
-const Header = () => {
+
+const ColorButton = styled(Button)(({ theme }) => ({
+    borderRadius:'40px',
+    backgroundColor: 'rgba(77, 89, 149, 0.06)',
+    fontSize: '13px',
+    paddingLeft: '10px',
+    paddingRight: '10px',
+    color:blue[700],
+    '&:hover': {
+        color: grey[50],
+        backgroundColor: blue[100],
+    },
+    marginRight:'10px',
+    marginLeft:'20px',
+    textTransform:'none',
+    fontWeight:'normal'
+    }));
+
+export default function ButtonAppBar() {
+    const navigate = useNavigate();
+
     return (
-        <div>this is header</div>
-    )
+    <Box sx={{ flexGrow: 1 }}>
+        <AppBar position="static" sx={{backgroundColor: "#ddd"}}>
+            <Box sx = {{textAlign:'center', padding: 1, color:"#000", boxShadow:5, fontFamily:'Raleway',fontSize:20}}>
+            Supporting, inspiring, and investing in women
+            </Box>
+      </AppBar>
+      <AppBar position="static" sx={{backgroundColor:"#fff", borderBottomLeftRadius:50, borderBottomRightRadius:50, padding:2}}>
+        <Container maxWidth="xl">
+            <Stack
+            direction="row"
+            justifyContent="space-between"
+            alignItems="center"
+            spacing={2}
+            >
+                <Box component="img" sx={{height: '88px',width: '128px',paddingLeft: '29px',}} src="/static/img/logo.png"/>
+                <Stack direction="row" justifyContent="space-between" alignItems="center" spacing={2}>
+                    <Link component="button" variant="body3" underline='none' onClick={() => {navigate('/Home');}} color={'black'} sx={{ padding:1, border:1, borderRadius:10}}>HOME</Link>
+                    <Link component="button" variant="body3" underline='none' onClick={() => {navigate('/Home');}} color={'black'} sx={{ padding:1, border:1, borderRadius:10}}>ABOUT</Link>
+                    <Link component="button" variant="body3" underline='none' onClick={() => {navigate('/Home');}} color={'black'} sx={{ padding:1, border:1, borderRadius:10}}>SHOP</Link>
+                    <Link component="button" variant="body3" underline='none' onClick={() => {navigate('/Home');}} color={'black'} sx={{ padding:1, border:1, borderRadius:10}}>POTFOLIO</Link>
+                    <Link component="button" variant="body3" underline='none' onClick={() => {navigate('/Home');}} color={'black'} sx={{ padding:1, border:1, borderRadius:10}}>LOGIN</Link>
+                    <Badge badgeContent={4} color="success">
+                        <ShoppingCartCheckoutIcon sx={{color:"black", fontSize:30}}></ShoppingCartCheckoutIcon>
+                    </Badge>
+                </Stack>
+            </Stack>
+        </Container>
+      </AppBar>
+    </Box>
+  );
 }
-export default Header
