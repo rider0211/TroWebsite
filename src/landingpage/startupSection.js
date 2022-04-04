@@ -25,8 +25,8 @@ const StartupSection = () =>{
     return (
         <Box sx={{backgroundColor:"#fff", marginTop:2}}>
             <Container maxWidth="lg" sx={{paddingTop:7}}>
-                <Divider><Typography variant="h4">Stephanie McKinney built River VC to support start ups</Typography></Divider>
-                <Stack direction="row" justifyContent="space-between" alignItems="center" spacing={2}>
+                <Divider><Typography variant="h4">Stephanie McKinney built <br></br>River VC to support start ups</Typography></Divider>
+                <Stack direction={{xs:'column', md:"row"}} justifyContent="space-between" alignItems="center" spacing={2}>
                     <Box sx={{textAlign:'center', padding:4}}>
                         <Typography variant="h5">Planing Futures</Typography>
                         <Typography variant="h6" paddingTop={5}>With many connections and experience, we are ready to help advise and financially back prospective companies. We are currently seeking companies founded by passionate and inventive teams that see the future of the world through different perspectives, knowing their customers, and fit in todays market.</Typography>
@@ -41,7 +41,7 @@ const StartupSection = () =>{
                     </Box>
                 </Stack>
                 <Divider><Typography variant="h4">Portfolio</Typography></Divider>
-                <Stack direction="row" justifyContent="space-between" alignItems="center" spacing={2}>
+                <Stack direction={{xs:'column', md:"row"}} justifyContent="space-between" alignItems="center" spacing={2}>
                     <Box sx={{textAlign:'center', padding:4}}>
                         <Typography variant="h5">Scotch Whisky</Typography>
                         <Box component="img" sx={{paddingTop: 2}} src="/static/img/withky.jpeg"/>
@@ -62,7 +62,7 @@ const StartupSection = () =>{
                         <ColorButton href="https://www.cytonics.com/" target="_blank">FIND OUR MORE</ColorButton>
                     </Box>
                 </Stack>
-                <Stack direction="row" justifyContent="space-between" alignItems="center" spacing={2}>
+                <Stack direction={{xs:'column', md:"row"}} justifyContent="space-between" alignItems="center" spacing={2}>
                     <Box sx={{textAlign:'center', padding:4}}>
                         <Typography variant="h5">Virtuix</Typography>
                         <Box component="img" sx={{paddingTop: 2}} src="/static/img/maxresdefault.jpeg"/>
@@ -94,7 +94,7 @@ const StartupSection = () =>{
                     </Box>
                 </Stack>
                 <Divider><Typography variant="h4">OUR TEAM</Typography></Divider>
-                <Stack direction="row" justifyContent="space-between" alignItems="center" spacing={2}>
+                <Stack direction={{xs:'column', md:"row"}} justifyContent="space-between" alignItems="center" spacing={2}>
                     <Box sx={{textAlign:'center', padding:4}}>
                         <Typography variant="h5">CEO</Typography>
                         <Typography variant="h6" paddingTop={5}>She created River VC LLC to help invest in start-up companies. As a woman-owned VC firm, she has a fresh unique take on today's market. She is passionate about changing the future for the better and knows that there are founders whose views are the same. Her hobbies are painting, Spartan races, and spending time with her family. </Typography>

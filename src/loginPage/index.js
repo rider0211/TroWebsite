@@ -45,65 +45,67 @@ const LoginPage = () => {
         fontWeight:'normal'
         }));
     return(
-        <Stack direction="row" justifyContent={"space-between"} height="100%" alignItems="center" spacing={0} padding={0}>
-            <Link onClick={() => {navigate('/');}}>
-                <Box component="img" sx={{height: '88px',width: '128px',marginLeft: '100px',position:'fixed', marginTop:'-400px'}} src="/static/img/logo.png"/>
-            </Link>
-            <Container maxWidth="lg" sx={{backgroundColor:"#ddd",height:'100%', paddingTop:30}}>
-                <Box width="100%">
-                    <Stack direction="column" justifyContent={"space-between"} width="100%" alignItems="center" spacing={5}>
-                        <Typography variant="h4">EXISTING MEMBERS</Typography>
+            <Stack direnction={'column'} justifyContent={'space-betweeb'} height="100%">
+                <Link onClick={() => {navigate('/');}}>
+                    <Box component="img" sx={{height: '88px',width: '128px',marginLeft: '100px',position:'fixed'}} src="/static/img/logo.png"/>
+                </Link>
+                <Stack direction={{xs:'column', md:"row"}} justifyContent={"space-between"} height="100%" alignItems="center" spacing={0} padding={0}>
+                    <Container maxWidth="lg" sx={{backgroundColor:"#ddd",height:'100%', paddingTop:30, paddingBottom:10}}>
+                        <Box width="100%">
+                            <Stack direction="column" justifyContent={"space-between"} width="100%" alignItems="center" spacing={5}>
+                                <Typography variant="h4">EXISTING MEMBERS</Typography>
 
-                        <FormControl sx={{ m: 1, width: '50ch'}} variant="outlined">
-                            <InputLabel htmlFor="outlined-adornment-emailaddress">Email Address</InputLabel>
-                            <OutlinedInput
-                                id="outlined-adornment-emailaddress"
-                                value={values.email}
-                                onChange={handleEmailChange('email')}
-                                label="EmailAddress"
-                            />
-                        </FormControl>
-                        <FormControl sx={{ m: 1, width: '50ch' }} variant="outlined">
-                            <InputLabel htmlFor="outlined-adornment-password">Password</InputLabel>
-                            <OutlinedInput
-                                id="outlined-adornment-password"
-                                type={values.showPassword ? 'text' : 'password'}
-                                value={values.password}
-                                onChange={handleChange('password')}
-                                endAdornment={
-                                <InputAdornment position="end">
-                                    <IconButton
-                                    aria-label="toggle password visibility"
-                                    onClick={handleClickShowPassword}
-                                    onMouseDown={handleMouseDownPassword}
-                                    edge="end"
-                                    >
-                                    {values.showPassword ? <VisibilityOff /> : <Visibility />}
-                                    </IconButton>
-                                </InputAdornment>
-                                }
-                                label="Password"
-                            />
-                        </FormControl>
-                        <FormControlLabel
-                        value="end"
-                        control={<Checkbox />}
-                        label="Remember Me"
-                        labelPlacement="end"
-                        />
-                        <ColorButton>LOG IN</ColorButton>
-                        <Link variant="body3" underline='none' onClick={() => {navigate('/Login');}} target="_blank">Forgot Your Password</Link>
-                    </Stack>
-                </Box>
-            </Container>
-            <Container maxWidth="lg" sx={{backgroundColor:"#fff",height:'100%', paddingTop:30}}>
-                <Stack direction="column" justifyContent={"space-between"} alignItems="center" spacing={5}>
-                    <Typography variant="h4">FUTURE MEMBERS</Typography>
-                    <Typography variant="h4">Are you ready to invest in the most compelling space startups</Typography>
-                    <ColorButton>APPLY NOW</ColorButton>
+                                <FormControl sx={{ m: 1, width: '50ch'}} variant="outlined">
+                                    <InputLabel htmlFor="outlined-adornment-emailaddress">Email Address</InputLabel>
+                                    <OutlinedInput
+                                        id="outlined-adornment-emailaddress"
+                                        value={values.email}
+                                        onChange={handleEmailChange('email')}
+                                        label="EmailAddress"
+                                    />
+                                </FormControl>
+                                <FormControl sx={{ m: 1, width: '50ch' }} variant="outlined">
+                                    <InputLabel htmlFor="outlined-adornment-password">Password</InputLabel>
+                                    <OutlinedInput
+                                        id="outlined-adornment-password"
+                                        type={values.showPassword ? 'text' : 'password'}
+                                        value={values.password}
+                                        onChange={handleChange('password')}
+                                        endAdornment={
+                                        <InputAdornment position="end">
+                                            <IconButton
+                                            aria-label="toggle password visibility"
+                                            onClick={handleClickShowPassword}
+                                            onMouseDown={handleMouseDownPassword}
+                                            edge="end"
+                                            >
+                                            {values.showPassword ? <VisibilityOff /> : <Visibility />}
+                                            </IconButton>
+                                        </InputAdornment>
+                                        }
+                                        label="Password"
+                                    />
+                                </FormControl>
+                                <FormControlLabel
+                                value="end"
+                                control={<Checkbox />}
+                                label="Remember Me"
+                                labelPlacement="end"
+                                />
+                                <ColorButton>LOG IN</ColorButton>
+                                <Link variant="body3" underline='none' onClick={() => {navigate('/Login');}} target="_blank">Forgot Your Password</Link>
+                            </Stack>
+                        </Box>
+                    </Container>
+                    <Container maxWidth="lg" sx={{backgroundColor:"#fff",height:'100%', paddingTop:30, paddingBottom:10}}>
+                        <Stack direction="column" justifyContent={"space-between"} alignItems="center" spacing={5}>
+                            <Typography variant="h4">FUTURE MEMBERS</Typography>
+                            <Typography variant="h4" textAlign={'center'}>Are you ready to invest in the most compelling space startups</Typography>
+                            <ColorButton>APPLY NOW</ColorButton>
+                        </Stack>
+                    </Container>
                 </Stack>
-            </Container>
-        </Stack>
+            </Stack>
     )
 }
 
