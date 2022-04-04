@@ -6,11 +6,15 @@ import React from "react";
 
 // Layouts
 import Landingpage from "./landingpage";
-
+import LoginPage from "./loginPage";
 const routes = [
   {
     path: "/",
     element: <Landingpage />,
+  },
+  {
+    path: "Login",
+    element: <LoginPage />,
   },
 ];
 

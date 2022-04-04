@@ -1,7 +1,8 @@
-import { Container, Divider, Typography, Box, Stack,Button } from "@mui/material";
+import { Container, Divider,Link, Typography, Box, Stack,Button } from "@mui/material";
 import React from "react";
 import { styled } from '@mui/material/styles';
 import { blue, grey } from '@mui/material/colors';
+import { useNavigate } from 'react-router-dom';
 const ColorButton = styled(Button)(({ theme }) => ({
     borderRadius:'40px',
     backgroundColor: 'rgba(77, 89, 149, 0.06)',
@@ -19,7 +20,12 @@ const ColorButton = styled(Button)(({ theme }) => ({
     textTransform:'none',
     fontWeight:'normal'
     }));
+
+    const redirectURL = (url) =>{
+        
+    }
 const StartupSection = () =>{
+    const navigate = useNavigate();
     return (
         <Box sx={{backgroundColor:"#fff", marginTop:2}}>
             <Container maxWidth="lg" sx={{paddingTop:7}}>
@@ -51,13 +57,13 @@ const StartupSection = () =>{
                         <Typography variant="h6" paddingTop={5}>
                         "GeoToll’s core technology is based on enhanced GPS (“e-GPS”), which equips smartphones with automatic tolling capabilities on all types of toll roads – express lanes, managed lanes, general-purpose lanes, and toll bridges – with over 99% accuracy."
                         </Typography>
-                        <ColorButton>FIND OUR MORE</ColorButton>
+                        <ColorButton href="https://www.geotoll.com/" target="_blank">FIND OUR MORE</ColorButton>
                     </Box>
                     <Box sx={{textAlign:'center', padding:4}}>
                         <Typography variant="h5">Cytonics</Typography>
                         <Box component="img" sx={{paddingTop: 2}} src="/static/img/CytonicsPitchDeck_F_P01__32.jpg"/>
                         <Typography variant="h6" paddingTop={5}>Our team is comprised of people who are determined to help build a better future. You can count on unbiased recommendations and impartial guidance. We have connections and experience that will aid you in your path. </Typography>
-                        <ColorButton>FIND OUR MORE</ColorButton>
+                        <ColorButton href="https://www.cytonics.com/" target="_blank">FIND OUR MORE</ColorButton>
                     </Box>
                 </Stack>
                 <Stack direction="row" justifyContent="space-between" alignItems="center" spacing={2}>
@@ -65,7 +71,7 @@ const StartupSection = () =>{
                         <Typography variant="h5">Virtuix</Typography>
                         <Box component="img" sx={{paddingTop: 2}} src="/static/img/maxresdefault.jpeg"/>
                         <Typography variant="h6" paddingTop={5}>Backed by Mark Cuban and other notable investors, the Omni is an omnidirectional treadmill that lets players walk and run in 360 degrees inside video games and other virtual worlds.</Typography>
-                        <ColorButton>FIND OUR MORE</ColorButton>
+                        <ColorButton href="https://digitzs.com/" target="_blank">FIND OUR MORE</ColorButton>
                     </Box>
                     <Box sx={{textAlign:'center', padding:4}}>
                         <Typography variant="h5">Digitzs</Typography>
@@ -73,14 +79,14 @@ const StartupSection = () =>{
                         <Typography variant="h6" paddingTop={5}>
                         It is with great confidence and pride that we can say we’ve accomplished our mission to “make payments painless for platforms”.  In all these years, we have yet to see a more elegant, simple, risk-free and profitable way to build payments into your merchant software platform.
                         </Typography>
-                        <ColorButton>FIND OUR MORE</ColorButton>
+                        <ColorButton href="https://digitzs.com/" target="_blank">FIND OUR MORE</ColorButton>
                     </Box>
                     <Box sx={{textAlign:'center', padding:4}}>
                         <Typography variant="h5">The Artemis Fund</Typography>
                         <Box component="img" sx={{paddingTop: 2}} src="/static/img/th.jpg"/>
                         <Typography variant="h6" paddingTop={5}>The Artemis Fund is helping back women founders change the statistics and support their tech-enabled company. 
                         "Our mission is to give female founders the access to capital that they deserve. We take the lead in most of our deals and go to work to help our founders complete their existing and future rounds with our network of trusted co-investors."</Typography>
-                        <ColorButton>FIND OUR MORE</ColorButton>
+                        <ColorButton href="https://www.theartemisfund.com" target="_blank">FIND OUR MORE</ColorButton>
                     </Box>
                 </Stack>
                 <Stack direction="row" justifyContent="center" alignItems="center" spacing={2}>
@@ -104,10 +110,10 @@ const StartupSection = () =>{
                 </Stack>
                 <Divider><Typography variant="h4">SOCIAL MEDIA</Typography></Divider>
                 <Stack direction="row" justifyContent="center" alignItems="center" spacing={5} padding={5}>
-                    <Box component="img" sx={{paddingTop: 2}} src="/static/img/instagram.png"/>
-                    <Box component="img" sx={{paddingTop: 2}} src="/static/img/linkdin.png"/>
-                    <Box component="img" sx={{paddingTop: 2}} src="/static/img/facebook.png"/>
-                    <Box component="img" sx={{paddingTop: 2}} src="/static/img/youtubu.png"/>
+                    <Link href="https://www.instagram.com/rivervcllc" target={'_blank'}><Box component="img" sx={{paddingTop: 2}} src="/static/img/instagram.png"/></Link>
+                    <Link href="https://www.linkedin.com/in/stephanie-mckinney" target={'_blank'}><Box component="img" sx={{paddingTop: 2}} src="/static/img/linkdin.png"/></Link>
+                    <Link href="https://www.twitter.com/river_vc" target={'_blank'}><Box component="img" sx={{paddingTop: 2}} src="/static/img/facebook.png"/></Link>
+                    <Link href="https://www.youtube.com/channel/UCg2PXDuS5PGS8M2bweNLICA" target={'_blank'}><Box component="img" sx={{paddingTop: 2}} src="/static/img/youtubu.png"/></Link>
                 </Stack>
                 <Divider><Typography variant="h4">CONTACT US</Typography></Divider>
                 <Stack direction="column" justifyContent="center" alignItems="center" spacing={5} padding={5}>

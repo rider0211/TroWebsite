@@ -34,7 +34,7 @@ export default function ButtonAppBar() {
             Supporting, inspiring, and investing in women
             </Box>
       </AppBar>
-      <AppBar position="static" sx={{backgroundColor:"#fff", borderBottomLeftRadius:50, borderBottomRightRadius:50, padding:2}}>
+      <AppBar position="static" sx={{backgroundColor:"#fff", borderBottomLeftRadius:50, borderBottomRightRadius:50, padding:2, opacity:'85%'}}>
         <Container maxWidth="xl">
             <Stack
             direction="row"
@@ -42,13 +42,15 @@ export default function ButtonAppBar() {
             alignItems="center"
             spacing={2}
             >
-                <Box component="img" sx={{height: '88px',width: '128px',paddingLeft: '29px',}} src="/static/img/logo.png"/>
+                <Link onClick={() => {navigate('/');}}>
+                    <Box component="img" sx={{height: '88px',width: '128px',paddingLeft: '29px',}} src="/static/img/logo.png"/>
+                </Link>
                 <Stack direction="row" justifyContent="space-between" alignItems="center" spacing={2}>
                     <Link component="button" variant="body3" underline='none' onClick={() => {navigate('/Home');}} color={'black'} sx={{ padding:1, border:1, borderRadius:10}}>HOME</Link>
-                    <Link component="button" variant="body3" underline='none' onClick={() => {navigate('/Home');}} color={'black'} sx={{ padding:1, border:1, borderRadius:10}}>ABOUT</Link>
-                    <Link component="button" variant="body3" underline='none' onClick={() => {navigate('/Home');}} color={'black'} sx={{ padding:1, border:1, borderRadius:10}}>SHOP</Link>
-                    <Link component="button" variant="body3" underline='none' onClick={() => {navigate('/Home');}} color={'black'} sx={{ padding:1, border:1, borderRadius:10}}>POTFOLIO</Link>
-                    <Link component="button" variant="body3" underline='none' onClick={() => {navigate('/Home');}} color={'black'} sx={{ padding:1, border:1, borderRadius:10}}>LOGIN</Link>
+                    <Link component="button" variant="body3" underline='none' onClick={() => {navigate('/About');}} color={'black'} sx={{ padding:1, border:1, borderRadius:10}}>ABOUT</Link>
+                    <Link component="button" variant="body3" underline='none' onClick={() => {navigate('/Shop');}} color={'black'} sx={{ padding:1, border:1, borderRadius:10}}>SHOP</Link>
+                    <Link component="button" variant="body3" underline='none' onClick={() => {navigate('/Porfolio');}} color={'black'} sx={{ padding:1, border:1, borderRadius:10}}>POTFOLIO</Link>
+                    <Link underline='none' href='/Login' color={'black'} sx={{ padding:1, border:1, borderRadius:10}} target="_blank">LOGIN</Link>
                     <Badge badgeContent={4} color="success">
                         <ShoppingCartCheckoutIcon sx={{color:"black", fontSize:30}}></ShoppingCartCheckoutIcon>
                     </Badge>
