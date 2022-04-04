@@ -2,7 +2,6 @@ import { Container, Divider,Link, Typography, Box, Stack,Button } from "@mui/mat
 import React from "react";
 import { styled } from '@mui/material/styles';
 import { blue, grey } from '@mui/material/colors';
-import { useNavigate } from 'react-router-dom';
 const ColorButton = styled(Button)(({ theme }) => ({
     borderRadius:'40px',
     backgroundColor: 'rgba(77, 89, 149, 0.06)',
@@ -21,11 +20,8 @@ const ColorButton = styled(Button)(({ theme }) => ({
     fontWeight:'normal'
     }));
 
-    const redirectURL = (url) =>{
-        
-    }
+
 const StartupSection = () =>{
-    const navigate = useNavigate();
     return (
         <Box sx={{backgroundColor:"#fff", marginTop:2}}>
             <Container maxWidth="lg" sx={{paddingTop:7}}>

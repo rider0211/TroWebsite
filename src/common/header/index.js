@@ -1,28 +1,8 @@
 import * as React from 'react';
-import { AppBar, Box, Link, Container, styled, Button, Badge  } from '@mui/material';
+import { AppBar, Box, Link, Container, Badge  } from '@mui/material';
 import { useNavigate } from 'react-router-dom';
 import { Stack } from '@mui/material';
-import { blue, grey } from '@mui/material/colors';
 import ShoppingCartCheckoutIcon from '@mui/icons-material/ShoppingCartCheckout';
-import { fontSize } from '@mui/system';
-
-
-const ColorButton = styled(Button)(({ theme }) => ({
-    borderRadius:'40px',
-    backgroundColor: 'rgba(77, 89, 149, 0.06)',
-    fontSize: '13px',
-    paddingLeft: '10px',
-    paddingRight: '10px',
-    color:blue[700],
-    '&:hover': {
-        color: grey[50],
-        backgroundColor: blue[100],
-    },
-    marginRight:'10px',
-    marginLeft:'20px',
-    textTransform:'none',
-    fontWeight:'normal'
-    }));
 
 export default function ButtonAppBar() {
     const navigate = useNavigate();
