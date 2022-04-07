@@ -25,7 +25,7 @@ const StartupSection = () =>{
     return (
         <Box sx={{backgroundColor:"#fff", marginTop:2}}>
             <Container maxWidth="lg" sx={{paddingTop:7}}>
-                <Divider><Typography variant="h4">Stephanie McKinney built <br></br>River VC to support start ups</Typography></Divider>
+                <Divider><Typography variant="h4">River VC Can Offer</Typography></Divider>
                 <Stack direction={{xs:'column', md:"row"}} justifyContent="space-between" alignItems="center" spacing={2}>
                     <Box sx={{textAlign:'center', padding:4}}>
                         <Typography variant="h5">Planing Futures</Typography>
@@ -40,7 +40,7 @@ const StartupSection = () =>{
                         <Typography variant="h6" paddingTop={5}>Our team is comprised of people who are determined to help build a better future. You can count on unbiased recommendations and impartial guidance. We have connections and experience that will aid you in your path. </Typography>
                     </Box>
                 </Stack>
-                <Divider><Typography variant="h4">Portfolio</Typography></Divider>
+                <Divider><Typography variant="h4" id="portfolio">Portfolio</Typography></Divider>
                 <Stack direction={{xs:'column', md:"row"}} justifyContent="space-between" alignItems="center" spacing={2}>
                     <Box sx={{textAlign:'center', padding:4}}>
                         <Typography variant="h5">Scotch Whisky</Typography>
