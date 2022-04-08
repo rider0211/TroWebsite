@@ -7,6 +7,8 @@ import React from "react";
 // Layouts
 import Landingpage from "./landingpage";
 import LoginPage from "./loginPage";
+import PortfolioPage from "./portfolioPage";
+
 const routes = [
   {
     path: "/",
@@ -15,6 +17,10 @@ const routes = [
   {
     path: "Login",
     element: <LoginPage />,
+  },
+  {
+    path: "Portfolio",
+    element: <PortfolioPage />,
   },
 ];
 
