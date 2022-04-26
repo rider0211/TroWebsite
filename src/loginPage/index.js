@@ -100,7 +100,7 @@ const LoginPage = () => {
                     <Container maxWidth="lg" sx={{backgroundColor:"#fff",height:'100%', paddingTop:30, paddingBottom:10}}>
                         <Stack direction="column" justifyContent={"space-between"} alignItems="center" spacing={5}>
                             <Typography variant="h4">FUTURE MEMBERS</Typography>
-                            <Typography variant="h4" textAlign={'center'}>Are you ready to invest in the most compelling space startups</Typography>
+                            <Typography variant="h4" textAlign={'center'}>Are you ready to invest in the most compelling companies</Typography>
                             <ColorButton>APPLY NOW</ColorButton>
                         </Stack>
                     </Container>

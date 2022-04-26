@@ -8,6 +8,7 @@ import React from "react";
 import Landingpage from "./landingpage";
 import LoginPage from "./loginPage";
 import PortfolioPage from "./portfolioPage";
+import About from "./about";
 
 const routes = [
   {
@@ -21,6 +22,10 @@ const routes = [
   {
     path: "Portfolio",
     element: <PortfolioPage />,
+  },
+  {
+    path: "About",
+    element: <About />,
   },
 ];
 

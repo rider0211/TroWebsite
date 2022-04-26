@@ -101,9 +101,9 @@ export default function ButtonAppBar(props) {
                       </Link>
                       <Stack direction="row" justifyContent="space-between" alignItems="center" spacing={2} display={{xs:'none', md:'flex'}}>
                           <Link underline='none' href="/" color={'black'} sx={{ padding:1, border:1, borderRadius:10}}>HOME</Link>
-                          <Link underline='none' href="#"  color={'black'} sx={{ padding:1, border:1, borderRadius:10}}>ABOUT</Link>
+                          <Link underline='none' href="/About"  color={'black'} sx={{ padding:1, border:1, borderRadius:10}}>ABOUT</Link>
                           <Link underline='none' href="#" color={'black'} sx={{ padding:1, border:1, borderRadius:10}}>SHOP</Link>
-                          <Link underline='none' href="/portfolio" color={'black'} sx={{ padding:1, border:1, borderRadius:10}}>POTFOLIO</Link>
+                          <Link underline='none' href="/portfolio" color={'black'} sx={{ padding:1, border:1, borderRadius:10}} target="_blank">POTFOLIO</Link>
                           <Link underline='none' href='/Login' color={'black'} sx={{ padding:1, border:1, borderRadius:10}} target="_blank">LOGIN</Link>
                           <Badge badgeContent={4} color="success">
                               <ShoppingCartCheckoutIcon sx={{color:"black", fontSize:30}}></ShoppingCartCheckoutIcon>
