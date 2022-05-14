@@ -40,7 +40,7 @@ const StartupSection = () =>{
                         <Typography variant="h6" paddingTop={5}>Our team is comprised of people who are determined to help build a better future. You can count on unbiased recommendations and impartial guidance. We have connections and experience that will aid you in your path. </Typography>
                     </Box>
                 </Stack>
-                <Divider><Typography variant="h4" id="portfolio">Portfolio</Typography></Divider>
+                {/* <Divider><Typography variant="h4" id="portfolio">Portfolio</Typography></Divider>
                 <Stack direction={{xs:'column', md:"row"}} justifyContent="space-between" alignItems="center" spacing={2}>
                     <Box sx={{textAlign:'center', padding:4}}>
                         <Typography variant="h5">Scotch Whisky</Typography>
@@ -88,11 +88,11 @@ const StartupSection = () =>{
                 <Stack direction="row" justifyContent="center" alignItems="center" spacing={2}>
                     <Box sx={{textAlign:'center', padding:4}}>
                         <Typography variant="h5">This could be your company...</Typography>
-                        <Box component="img" sx={{paddingTop: 2}} src="/static/img/qt=q_29.jpeg"/>
+                        <Box component="img" sx={{paddingTop: 2}} src="/static/img/calculator.jpeg"/>
                         <Typography variant="h6" paddingTop={5}>Want your company to reach its goals? Schedule a meeting with our CEO!</Typography>
                         <ColorButton>FIND OUR MORE</ColorButton>
                     </Box>
-                </Stack>
+                </Stack> */}
                 <Divider><Typography variant="h4">OUR TEAM</Typography></Divider>
                 <Stack direction={{xs:'column', md:"row"}} justifyContent="space-between" alignItems="center" spacing={2}>
                     <Box sx={{textAlign:'center', padding:4}}>
